@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Jacob Whitman - Final Website Project - 7/28/21 -->
+<html lang="en">
+<head>
+	<title>Job Form | Papa Louie's Pizza Parlor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Papa Louie's Pizza Parlor Job Form. Fill out the form to recieve more information about our job opportunities.">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/papalouielogo.PNG" alt="Papa Louie's Pizza Parlor logo" width="700" height="353"></a>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="nutrition.html">Nutrition</a></li>
+			<li><a href="catering.html">Catering</a></li>
+			<li><a href="locations.html">Locations</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div id="main">
+		<form>
+			<fieldset>
+			<label for="fName">First Name:</label>
+			<input type="text" id="fName" name="fName">
+			
+			<label for="lName">Last Name:</label>
+			<input type="text" name="lName" id="lName">
+			
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email">
+			
+			<label for="phone">Phone Number:</label>
+			<input type="tel" name="phone" id="phone">
+			</fieldset>
+			
+			<fieldset>
+			<p>Which location would you like to work at?</p>
+				<ul>
+					<li><input type="radio" name="grndrps" id="grndrps" value="grndrps" class="radio">Grand Rapids</li>
+					<li><input type="radio" name="lansing" id="lansing" value="lansing" class="radio">Lansing</li>
+					<li><input type="radio" name="detroit" id="detroit" value="detroit" class="radio">Detroit</li>
+				</ul>
+			
+			<label for="age">Are you above the age 18?</label>
+			<select name="age" id="age">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+			</fieldset>
+			
+			<fieldset>
+			<p>Is there anything else we need to know?</p>
+			<textarea id="extrainfo" name="extrainfo" rows="5" cols="50"></textarea>
+			
+			<input type="submit" id="submit" value="Submit" class="btn">
+			<input type="reset" id="reset" value="Reset" class="btn">
+			</fieldset>
+		</form>
+	</div> <!-- end main div -->
+	
+	<footer>
+		&copy; Copyright 2021. All rights reserved.<br>
+		<a>www.papalouiepizzaparlor.com</a>
+	</footer> <!-- end footer -->
+</body>
+</html>

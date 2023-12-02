@@ -1,0 +1,275 @@
+/* Jacob Whitman 7-28-21 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Style rule to change the max-width and height of the images. */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Style rule to center the header content.  */
+header{
+	text-align: center;
+}
+
+/* Style rule to change the background color, border style, radius, font-family, font size, and padding of the main content. */
+#main {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-radius: .5em;
+	font-family: candara, helvectia, verdana;
+	font-size: 1.3em;
+	padding: .5em;
+	overflow: hidden;
+}
+
+/* Style rule to change the font family of the h1 and h2. */
+h1, h2 {
+	font-family: 'Bebas Neue', candara, helvectia;
+}
+
+/* Style rule to change the background color of the body content. */
+body {
+	background-color: #F5DEB3; /* Wheat hex code. */
+}
+
+/* Style rule to change the background color, margin top, padding, font-family, and margin top of the footer. */
+footer {
+	background-color: #5C4033; /* Dark brown hex code. */
+	margin-top: 2em;
+	text-align: center;
+	padding: .5em;
+	color: #FFFFFF;
+	font-family: candara, helvectia, verdana;
+}
+
+/* Style rule to center align the content in the nav, change the font size, family, and weight. */
+nav {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/* Style rule to reposition the nav links. */
+nav ul {
+	padding: 0;
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+/* Style rule to change the appearance of the nav links. */
+nav li {
+	background-color: #990000;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.3em;
+	border-radius: .5em;
+}
+
+/* Style rule to change the left and right margins of the table and create a black border. */
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 0.1em solid #000000;
+}
+
+/* Style rule to change the color, font weight, and space around the caption. */
+caption {
+	font-weight: bold;
+	border: 0.1em solid #000000;
+	background-color: #990000;
+	color: #FFFFFF;
+	padding: 0.3em
+}
+
+/* Style rule to add a border around the table content. */
+td {
+	border: 0.1em solid #000000;
+	padding: .5em;
+}
+
+/* Style rule to add padding around the table headings. */
+th {
+	padding: 0.3em;
+}
+
+/* Style rule to remove the style type of the form list. */
+form ul {
+	list-style-type: none;
+}
+
+/* Style rule to change the display of the label content for the forms. */
+label {
+	display: block;
+}
+
+/* Style rule to add a margin bottom to the input on the content for the forms.*/
+input {
+	margin-bottom: 1.5em;
+}
+
+/* Style to hide the fieldset border on mobile view. */
+fieldset {
+	border: none;
+}
+
+/* Style rule to display the mobile content. */
+.mobile {
+	display: inline;
+}
+
+/* Style rule to hide the desktop content. */
+.desktop {
+	display: none;
+}
+
+/* Style rule to change the titles for the pizza names on the Menu page.*/
+.pizzatitle {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: 'Bebas Neue', serif;
+	padding: .3em;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+
+/* Style rule to change the positioning of the pizza picuters on the Menu. */
+.pizzapicture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style rule for the positioning of the location images on the Locations page. */
+.locations {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: .3em solid #000000;
+}
+
+/* Style rule for the location titles on the Locations page.*/
+.locationtitle {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: 'Bebas Neue', serif;
+	padding: .3em;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+
+/* Style rule to add a border around and float the 1970 parlor image. */
+.oldpicture {
+	border: .1em solid #000000;
+	float: left;
+}
+
+/* Style to float the worker image to the left. */
+.worker {
+	float: left;
+}
+
+/* Style rule to remove the underline from the links */
+nav li a {
+	text-decoration: none;
+}
+
+/* Style rules for pseudo-classes */
+nav li a:link {
+	color: #FFFFFF;
+}
+
+nav li a:visited {
+	color: #A9A9A9; /* HTML DarkGray */
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 643px */
+@media only screen and (min-width: 643px){
+
+/* Style rule to hide mobile content. */	
+.mobile {
+	display: none;
+}
+
+/* Style rule to display desktop content. */
+.desktop {
+	display: inline;
+}
+
+/* Style rule to change the tablet/desktop positioning of the main content. Making it smaller than the mobile spacing. */	
+#main {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style rule to add a background color to the nav bar. */
+nav {
+	background-color: #990000;
+}
+
+/* Style rule to center align and remove the style of the nav content. */
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+/* Style rule to change the display and padding of the nav content. */
+nav li {
+	display: inline-block;
+	padding: .5em;
+}
+
+/* Stlye to underline the text in the forms for tablet and desktop view. */
+form p {
+	text-decoration: underline;
+}
+
+/* Style to improve the border for the fieldset. */
+fieldset {
+	border: .1em solid #000000;
+}
+
+/* Style rule to change the positioning of the 1970 pizza parlor image. */
+.oldpicture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 999px */
+@media only screen and (min-width: 999px){
+
+/* Style rule to add padding to the form. */
+form {
+	padding: 1.5em;
+}
+
+/* Style rule for the label */
+label {
+	display: inline;
+	padding: .5em;
+}
+
+/* Style to add a background color to the fieldset on the desktop viewport. */
+fieldset {
+	background-color: #DCDCDC;
+}
+
+/* Style rules for pseudo-classes */
+nav li a:hover {
+	color: #FDDA0D; /* Cadmium Yellow*/
+	text-decoration: underline;
+}
+
+nav li a:active {
+	color: #FDDA0D; /* Cadmium Yellow*/
+}
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Jacob Whitman - Final Website Project - 7/28/21 -->
+<html lang="en">
+<head>
+	<title>Catering | Papa Louie's Pizza Parlor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Papa Louie's Pizza Parlor Catering page. Fill out the form if you are interested in catering from us.">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/papalouielogo.PNG" alt="Papa Louie's Pizza Parlor logo" width="700" height="353"></a>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="nutrition.html">Nutrition</a></li>
+			<li><a href="catering.html">Catering</a></li>
+			<li><a href="locations.html">Locations</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div id="main">
+	
+		<p>Having a party, business meeting, or large gathering? No problem! We are here for all of your catering needs! Fill out the form below and we will get back with you as soon as possible.</p>
+		
+		<form>
+			<fieldset>
+			<label for="fName">First Name:</label>
+			<input type="text" id="fName" name="fName">
+			
+			<label for="lName">Last Name:</label>
+			<input type="text" name="lName" id="lName">
+			
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email">
+			
+			<label for="phone">Phone Number:</label>
+			<input type="tel" name="phone" id="phone">
+			
+			<label for="address">Address:</label>
+			<input type="text" name="address" id="address">
+			
+			<label for="zip">Zip:</label>
+			<input type="text" name="zip" id="zip">
+			
+			<label for="state">State:</label>
+			<input type="text" name="state" id="state">
+			
+			<label for="city">City:</label>
+			<input type="text" name="city" id="city">
+			</fieldset> <!-- end fieldset -->
+			
+			<fieldset>
+			<p>Please select which type of catering you are looking for:</p>
+				<ul>
+					<li><input type="radio" name="party" id="party" value="party" class="radio">Party</li>
+					<li><input type="radio" name="bsmeet" id="bsmeet" value="bsmeet" class="radio">Business Meeting</li>
+					<li><input type="radio" name="school" id="school" value="school" class="radio">School Event</li>
+					<li><input type="radio" name="other" id="other" value="other" class="radio">Other</li>
+				</ul>
+			
+			<label for="amount">Catering for how many people:</label>
+			<select name="amount" id="amount">
+				<option value="5">10+</option>
+				<option value="10">25+</option>
+				<option value="15">50+</option>
+				<option value="25">100+</option>
+				<option value="other">Other</option>
+			</select>
+			</fieldset> <!-- end fieldset -->
+			
+			<fieldset>
+			<p>Extra Catering Information:</p>
+			<textarea id="extra" name="extra" rows="5" cols="50"></textarea>
+			
+			<input type="submit" id="submit" value="Submit" class="btn">
+			<input type="reset" id="reset" value="Reset" class="btn">
+			</fieldset> <!-- end fieldset -->
+			
+		</form> <!-- end form -->
+	</div> <!-- end main div -->
+	
+	<footer>
+		&copy; Copyright 2021. All rights reserved.<br>
+		<a>www.papalouiepizzaparlor.com</a>
+	</footer> <!-- end footer -->
+</body>
+</html>
